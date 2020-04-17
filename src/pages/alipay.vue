@@ -1,14 +1,12 @@
 <template>
-    <div>
-        alipay
-    </div>
+  <div>alipay</div>
 </template>
 <script>
-
 export default {
-    name:'alipay',
-    components:{
-     
-    }
-}
+  name: "alipay",
+  data() {
+    return {};
+  },
+  components: {}
+};
 </script>

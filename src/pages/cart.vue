@@ -12,7 +12,7 @@ export default {
     name:'cart',
     components:{
      OrderHeader,
-     NavFooter
+      NavFooter 
     }
 }
 </script>

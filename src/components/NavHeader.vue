@@ -255,9 +255,7 @@ export default {
           }
         })
         .then(res => {
-          if (res.list.length >= 6) {
-            this.phoneList = res.list.slice(0, 6);
-          }
+          this.phoneList = res.list;
         });
     },
     goToCart() {
@@ -309,7 +307,6 @@ export default {
           display: inline-block;
           width: 110px;
           height: 55px;
-
           &:before {
             content: "";
             @include bgImg(55px, 55px, "/imgs/mi-logo.png", 55px);
@@ -358,7 +355,7 @@ export default {
             box-shadow: 0 7px 6px 0 rgba(0, 0, 0, 0.11);
             z-index: 10;
             transition: height 0.5s;
-
+            background-color: #ffffff;
             .product {
               float: left;
               width: 16.6%;

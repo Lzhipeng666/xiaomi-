@@ -1,14 +1,10 @@
 <template>
-    <div>
-        orderpay
-    </div>
+  <div>
+    orderPay
+  </div>
 </template>
 <script>
-
-export default {
-    name:'orderPay',
-    components:{
-     
-    }
-}
+  export default{
+    name:'order-pay'
+  }
 </script>

@@ -1,14 +1,10 @@
 <template>
-    <div>
-        detail
-    </div>
+  <div>
+    detail
+  </div>
 </template>
 <script>
-
-export default {
-    name:'detail',
-    components:{
-     
-    }
-}
+  export default{
+    name:'detail'
+  }
 </script>

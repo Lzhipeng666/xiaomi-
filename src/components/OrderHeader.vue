@@ -1,10 +1,8 @@
 <template>
-    <div>
-       order-header
-    </div>
+  <div>order-header</div>
 </template>
 <script>
-export default {
+  export default{
     name:'order-header'
-}
+  }
 </script>

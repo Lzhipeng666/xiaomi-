@@ -1,14 +1,10 @@
 <template>
-    <div>
-        product
-    </div>
+  <div>
+    product
+  </div>
 </template>
 <script>
-
-export default {
-    name:'product',
-    components:{
-     
-    }
-}
+  export default{
+    name:'product'
+  }
 </script>

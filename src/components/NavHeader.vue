@@ -227,7 +227,7 @@ export default {
   name: "nav-header",
   data() {
     return {
-      // username: "jack",
+      username: "",
       phoneList: []
     };
   },

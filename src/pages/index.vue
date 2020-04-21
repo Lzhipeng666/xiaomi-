@@ -82,6 +82,7 @@ export default {
         },
         navigation: {
           /**左右箭头点击事件 */
+          /**左右箭头点击事件 */
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
         }

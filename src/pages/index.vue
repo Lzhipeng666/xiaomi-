@@ -51,8 +51,16 @@
           <div class="swiper-button-next" slot="button-next"></div>
         </swiper>
       </div>
-      <div class="ads-box"></div>
-      <div class="banner"></div>
+      <div class="ads-box">
+        <a :href="'/#/product/'+item.id" v-for="(item,index) in adsList" :key="index">
+          <img :src="item.img" alt />
+        </a>
+      </div>
+      <div class="banner">
+        <a href="/#/product/30">
+          <img src="/imgs/banner-1.png" alt />
+        </a>
+      </div>
       <div class="product-box"></div>
     </div>
     <ServiceBar></ServiceBar>
@@ -137,6 +145,24 @@ export default {
         [0, 0, 0, 0],
         [0, 0, 0, 0],
         [0, 0, 0, 0]
+      ],
+      adsList: [
+        {
+          id: 33,
+          img: "/imgs/ads/ads-1.png"
+        },
+        {
+          id: 48,
+          img: "/imgs/ads/ads-2.jpg"
+        },
+        {
+          id: 45,
+          img: "/imgs/ads/ads-3.png"
+        },
+        {
+          id: 47,
+          img: "/imgs/ads/ads-4.jpg"
+        }
       ]
     };
   },
@@ -208,8 +234,8 @@ export default {
                 font-size: 14px;
               }
               img {
-                width: 42px;
-                height: 35px;
+                width: 40px;
+                height: 40px;
                 vertical-align: middle;
                 margin-right: 15px;
               }
@@ -228,6 +254,17 @@ export default {
         height: 100%;
       }
     }
+  }
+  .ads-box {
+    @include flex();
+    margin: 14px 0 31px 0;
+    a {
+      width: 296px;
+      height: 167px;
+    }
+  }
+  .banner {
+    margin-bottom: 50px;
   }
 }
 </style>

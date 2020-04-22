@@ -31,7 +31,7 @@
                 <li class="product" v-for="(item,index) in phoneList" :key="index">
                   <a v-bind:href="'/#/product/'+item.id" target="_blank">
                     <div class="pro-img">
-                      <img :src="item.mainImage" :alt="item.subtitle" />
+                      <img v-lazy="item.mainImage" :alt="item.subtitle" />
                     </div>
                     <div class="pro-name">{{item.name}}</div>
                     <div class="pro-price">{{item.price | currency}}</div>
@@ -40,7 +40,6 @@
               </ul>
             </div>
           </div>
-
           <div class="item-menu">
             <span>电视</span>
             <div class="children">
@@ -49,7 +48,7 @@
                   <a href target="_blank">
                     <div class="pro-img">
                       <img
-                        src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/0112cb7e2ea8489fbd36ce3a781d5232.jpg?thumb=1&w=160&h=110&f=webp&q=900"
+                        v-lazy="'//cdn.cnbj1.fds.api.mi-img.com/mi-mall/0112cb7e2ea8489fbd36ce3a781d5232.jpg?thumb=1&w=160&h=110&f=webp&q=900'"
                         alt
                       />
                     </div>
@@ -61,7 +60,7 @@
                   <a href target="_blank">
                     <div class="pro-img">
                       <img
-                        src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/6917267948c54c647d2009a98637aac6.jpg?thumb=1&w=160&h=110&f=webp&q=90"
+                        v-lazy="'//cdn.cnbj1.fds.api.mi-img.com/mi-mall/6917267948c54c647d2009a98637aac6.jpg?thumb=1&w=160&h=110&f=webp&q=90'"
                         alt
                       />
                     </div>
@@ -73,7 +72,7 @@
                   <a href target="_blank">
                     <div class="pro-img">
                       <img
-                        src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/00f597a8725eee9245e383c35cd4f7b6.jpg?thumb=1&w=160&h=110"
+                        v-lazy="'//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/00f597a8725eee9245e383c35cd4f7b6.jpg?thumb=1&w=160&h=110'"
                         alt
                       />
                     </div>
@@ -85,7 +84,7 @@
                   <a href target="_blank">
                     <div class="pro-img">
                       <img
-                        src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a40904b6a053b73b631a152334388d0e.jpg?thumb=1&w=160&h=110"
+                        v-lazy="'//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a40904b6a053b73b631a152334388d0e.jpg?thumb=1&w=160&h=110'"
                         alt
                       />
                     </div>
@@ -97,7 +96,7 @@
                   <a href target="_blank">
                     <div class="pro-img">
                       <img
-                        src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/0112cb7e2ea8489fbd36ce3a781d5232.jpg?thumb=1&w=160&h=110&f=webp&q=900"
+                        v-lazy="'//cdn.cnbj1.fds.api.mi-img.com/mi-mall/0112cb7e2ea8489fbd36ce3a781d5232.jpg?thumb=1&w=160&h=110&f=webp&q=900'"
                         alt
                       />
                     </div>
@@ -109,24 +108,12 @@
                   <a href target="_blank">
                     <div class="pro-img">
                       <img
-                        src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/e8f4e22f6d591825f8f150b3309c750b.png?thumb=1&w=160&h=110"
+                        v-lazy="'//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/e8f4e22f6d591825f8f150b3309c750b.png?thumb=1&w=160&h=110'"
                         alt
                       />
                     </div>
                     <div class="pro-name">小米电视4A 32英寸</div>
                     <div class="pro-price">699元</div>
-                  </a>
-                </li>
-                <li class="product">
-                  <a href target="_blank">
-                    <div class="pro-img">
-                      <img
-                        src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/bf72a3e9a6e799cb71ecfa7d80465351.jpg?thumb=1&w=160&h=110"
-                        alt
-                      />
-                    </div>
-                    <div class="pro-name">小米电视4A 55英寸</div>
-                    <div class="pro-price">1699元</div>
                   </a>
                 </li>
               </ul>
@@ -140,7 +127,7 @@
                   <a href target="_blank">
                     <div class="pro-img">
                       <img
-                        src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/6abc701fb3cf48f2c7a3fd5ef053529a.jpg?thumb=1&w=160&h=110&f=webp&q=90"
+                        v-lazy="'//cdn.cnbj1.fds.api.mi-img.com/mi-mall/6abc701fb3cf48f2c7a3fd5ef053529a.jpg?thumb=1&w=160&h=110&f=webp&q=90'"
                         alt
                       />
                     </div>
@@ -152,7 +139,7 @@
                   <a href target="_blank">
                     <div class="pro-img">
                       <img
-                        src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png?thumb=1&w=160&h=110"
+                        v-lazy="'//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png?thumb=1&w=160&h=110'"
                         alt
                       />
                     </div>
@@ -164,7 +151,7 @@
                   <a href target="_blank">
                     <div class="pro-img">
                       <img
-                        src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/6a25f895ad6019c3fae32fd1f48a2c7c.png?thumb=1&w=160&h=110&f=webp&q=90"
+                        v-lazy="'//cdn.cnbj1.fds.api.mi-img.com/mi-mall/6a25f895ad6019c3fae32fd1f48a2c7c.png?thumb=1&w=160&h=110&f=webp&q=90'"
                         alt
                       />
                     </div>
@@ -176,7 +163,7 @@
                   <a href target="_blank">
                     <div class="pro-img">
                       <img
-                        src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/33c6a31aaee90164ce963801bec48e64.png?thumb=1&w=160&h=110&f=webp&q=90"
+                        v-lazy="'//cdn.cnbj1.fds.api.mi-img.com/mi-mall/33c6a31aaee90164ce963801bec48e64.png?thumb=1&w=160&h=110&f=webp&q=90'"
                         alt
                       />
                     </div>
@@ -188,7 +175,7 @@
                   <a href target="_blank">
                     <div class="pro-img">
                       <img
-                        src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/bb159dbe860ee434b52d8eed9e9fd424.png?thumb=1&w=160&h=110"
+                        v-lazy="'//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/bb159dbe860ee434b52d8eed9e9fd424.png?thumb=1&w=160&h=110'"
                         alt
                       />
                     </div>
@@ -200,7 +187,7 @@
                   <a href target="_blank">
                     <div class="pro-img">
                       <img
-                        src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/95c4329ce2c454e2a5fa1e0931528a46.png?thumb=1&w=160&h=110"
+                        v-lazy="'//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/95c4329ce2c454e2a5fa1e0931528a46.png?thumb=1&w=160&h=110'"
                         alt
                       />
                     </div>

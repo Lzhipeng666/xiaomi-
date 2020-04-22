@@ -35,18 +35,17 @@
     </div>
     <div class="footer">
       <div class="footer-link">
-        <a href="https://www.imooc.com/u/1343480" target="_blank">河畔一角主页</a>
+        <a href="javascript:;">简体</a>
         <span>|</span>
-        <a href="https://coding.imooc.com/class/113.html" target="_blank">Vue全栈课程</a>
+        <a href="javascript:;">繁体</a>
         <span>|</span>
-        <a href="https://coding.imooc.com/class/236.html" target="_blank">React全家桶课程</a>
+        <a href="javascript:;">English</a>
         <span>|</span>
-        <a
-          href="https://coding.imooc.com/class/343.html"
-          target="_blank"
-        >微信支付专项课程（H5+小程序/云+Node+MongoDB）</a>
+        <a href="javascript:;">常见问题</a>
+        <span>|</span>
+        <a href="javascript:;">隐私政策</a>
       </div>
-      <p class="copyright">Copyright ©2019 mi.futurefe.com All Rights Reserved.</p>
+      <p class="copyright">小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
     </div>
   </div>
 </template>

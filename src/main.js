@@ -34,7 +34,6 @@ axios.interceptors.response.use(function (response) {
     return Promise.reject(res);
   }
 });
-
 Vue.use(VueAxios, axios);
 Vue.use(VueCookie);
 Vue.use(VueLazyLoad, {

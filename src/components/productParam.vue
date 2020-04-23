@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-bar">
+  <div class="nav-bar" :class="{'is_fixed':isFiexed}">
     <div class="container">
       <div class="pro-title">小米8</div>
       <div class="pro-param">
@@ -17,7 +17,27 @@
 export default {
   name: "nav-bar",
   data() {
-    return {};
+    return {
+      isFiexed: false
+    };
+  },
+  mounted() {
+    //   检测浏览器滚动
+    window.addEventListener("scroll", this.initHeight);
+  },
+  methods: {
+    initHeight() {
+      // 获取浏览器的高度，因为浏览器有兼容性所以多取几个值
+      let scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      this.isFiexed = scrollTop > 152 ? true : false;
+    }
+  },
+  destroyed() {
+    //   销毁
+    window.removeEventListener("scroll", this.initHeight, false);
   }
 };
 </script>
@@ -27,7 +47,14 @@ export default {
 .nav-bar {
   height: 70px;
   line-height: 70px;
-  border: 1px solid $colorH;
+  border-top: 1px solid $colorH;
+  background-color: $colorG;
+  &.is_fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
+  }
   .container {
     @include flex();
     .pro-title {

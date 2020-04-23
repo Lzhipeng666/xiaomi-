@@ -22,7 +22,7 @@
     <div class="nav-header">
       <div class="container">
         <div class="header-logo">
-          <a href="javascript:;"></a>
+          <a href="#/index"></a>
         </div>
         <div class="header-menu">
           <div class="item-menu">

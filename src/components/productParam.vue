@@ -1,7 +1,7 @@
 <template>
   <div class="nav-bar" :class="{'is_fixed':isFiexed}">
     <div class="container">
-      <div class="pro-title">小米8</div>
+      <div class="pro-title">{{title}}</div>
       <div class="pro-param">
         <a href>概述</a>
         <span>|</span>
@@ -16,6 +16,9 @@
 <script>
 export default {
   name: "nav-bar",
+  props: {
+    title: String
+  },
   data() {
     return {
       isFiexed: false

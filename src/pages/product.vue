@@ -59,9 +59,9 @@
           <br />更能AI 精准分析视频内容，15个场景智能匹配背景音效。
         </p>
         <div class="video-bg" @click="videoShow=true"></div>
-        <div class="video-box" v-show="videoShow">
-          <div class="overlay"></div>
-          <div class="video">
+        <div class="video-box">
+          <div class="overlay" v-if="videoShow"></div>
+          <div class="video" :class="{'slide':videoShow}">
             <span class="icon-close" @click="videoShow=false"></span>
             <video src="/imgs/product/video.mp4" muted autoplay controls="controls"></video>
           </div>
@@ -183,7 +183,7 @@ export default {
         }
         .video {
           position: fixed;
-          top: 50%;
+          top: -50%;
           left: 50%;
           // transform: translate(-50%, -50%);
           margin-left: -500px;
@@ -191,6 +191,12 @@ export default {
           z-index: 10;
           width: 1000px;
           height: 536px;
+          opacity: 0;
+          transition: all 0.6s;
+          &.slide {
+            top: 50%;
+            opacity: 1;
+          }
           .icon-close {
             position: absolute;
             top: 20px;

@@ -1,10 +1,15 @@
 <template>
-  <div>
-    orderConfirm
-  </div>
+  <div class="d">ss</div>
 </template>
 <script>
-  export default{
-    name:'order-confirm'
+// import OrderHeader from "./../components/OrderHeader";
+export default {
+  name: "order-confirm",
+  data() {
+    return {};
   }
+  // components: {
+  //   OrderHeader
+  // }
+};
 </script>

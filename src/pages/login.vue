@@ -85,7 +85,7 @@ export default {
           email: "845007771@qq.com"
         })
         .then(() => {
-          alert("注册成功");
+          this.$message.success("注册成功");
         });
     }
   }
